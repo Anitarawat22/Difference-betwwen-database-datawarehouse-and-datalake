@@ -1,0 +1,32 @@
+⭐️Database : Database is organized collection of storing the data in the form of rows and columns . Basically it holds data ,Moreover deals with Transactional data.
+
+deals with OLTP (Online Transaction Processing ) which is application-oriented. Used for business tasks.
+database is structured means that it has a certain format(rows and table). it only works for the recent data .
+
+It follows sceheme on write architecture which means first we decide the schema and on the basis of that data is interested and mismatched records are flagged and the cost to store the data in the database is high.
+
+example :- MySQL,PostgreSQL.
+
+⭐️Datawarehouse :- A data warehouse is a type of data management system that is designed to enable and support business intelligence (BI) activities, especially analytics.
+
+datawarehouse holds more data than the database and mainly used for analytical purpose.
+
+Deals with the OLAP (Online Analytical Processing) which is  subject-oriented. Used for Data Mining, Analytics, Decisions making, etc.
+
+The analytical process can't be done on database as lot of data is required which is very costly and also it make the transaction very slow.We take the data from the database and migrate or transport in the datawarehouse to do analytical processsing.
+
+It follows schema on write and the storage cost is high in datawarehouse but less than your database.
+
+
+⭐️DataLake:-  a centralized repository designed to store, process, and secure large amounts of data.In DataLake the data is present in the raw form can structured, semistructured, and unstructured data
+
+It follows the process ELT (Extract Load Transform)
+
+Suppose we have a Log file then
+1. Extract the data.
+2. Load to the datalake.
+3. And later think of Transforimg it.
+
+example:- HDFS, Amazon S3
+
+It follows schema on Read and it is cost effective because uses cheap hardware or storage.
